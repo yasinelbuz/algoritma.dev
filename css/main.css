@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200;400;500;600;700&display=swap');
+
+
+
+body {
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.container {
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#header {
+    padding: 0 60px;
+    background-color: #222;
+}
+
+
+.header {
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.header .header-logo {
+    margin-right: 20px;
+}
+
+.header .header-logo a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.header .header-menu a {
+    color: #ccc;
+    font-weight: 400;
+    text-decoration: none;
+    margin-right: 20px;
+    transition: all .3s;
+}
+
+.header .header-menu a:hover {
+    color: #fff
+}
+
+.header .header-menu a.soru-gonder-btn {
+    border: 1px solid rgba(255, 255, 255, 0.472);
+    padding: 10px 20px;
+    border-radius: 7px;
+}
+
+/* About */
+.about {
+    margin-top: 75px;
+    margin-bottom: 75px;
+}
+
+.about h1 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 18px;
+    line-height: 200%;
+    margin-bottom: 20px;
+}
+
+.algortihm-question li {
+    list-style-type: lower-number;
+    margin-left: 15px;
+    margin-bottom: 20px;
+    border-bottom: 1px dashed #e3e2e2;
+    counter-increment: count;
+
+}
+
+.algortihm-question li .question {
+    display: flex;
+    align-items: center;
+}
+
+.algortihm-question li .question-settings {
+    margin-left: auto;
+}
+
+.algortihm-question li::marker {
+    color: red;
+    font-weight: 700;
+    content: "#" counter(count) " ";
+}
+
+.algortihm-question li a.question-text {
+    font-size: 18px;
+    text-decoration: none;
+    display: block;
+    flex: 1;
+    color: #222;
+    padding: 10px;
+    line-height: 180%;
+    display: block;
+    margin-right: 20px;
+}
+
+.algortihm-question li a:hover {
+    font-weight: 700;
+}
+
+.kolay,
+.zor,
+.orta {
+    background-color: rgb(0, 0, 251, 0.3);
+    color: #000 !important;
+    display: inline-block;
+    border-radius: 20px;
+    font-size: 12px !important;
+    padding: 5px 10px !important;
+}
+
+.orta {
+    background-color: rgba(251, 238, 0, 0.3);
+}
+
+.zor {
+    background-color: rgba(251, 0, 0, 0.3);
+}
