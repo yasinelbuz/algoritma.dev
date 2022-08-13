@@ -130,3 +130,44 @@ body {
 .zor {
     background-color: rgba(251, 0, 0, 0.3);
 }
+
+.popup {
+    width: 550px;
+    height: 100%;
+    padding: 50px;
+    background-color: #fff;
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: none;
+}
+
+.popup h2 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    line-height: 140%;
+}
+
+.popup p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    line-height: 140%;
+}
+
+.popup .settings {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.popup .settings .btn {
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.popup .settings .btn-complated {
+    background-color: rgb(259, 147, 87)
+}
